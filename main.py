@@ -5,8 +5,8 @@ import pandas as pd
 
 app = FastAPI()
 
-model = joblib.load(r"C:\Users\osayi\Desktop\Jupyter\Diabetes-prediction-FastAPI\diabetes_model.pkl")
-scaler = joblib.load(r"C:\Users\osayi\Desktop\Jupyter\Diabetes-prediction-FastAPI\scaler.pkl")
+model = joblib.load("diabetes_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 class model_input(BaseModel):
     Pregnancies: int
